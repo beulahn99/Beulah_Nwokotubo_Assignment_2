@@ -1,0 +1,107 @@
+/*
+* Author: Beulah Nwokotubo
+* File Name: login.css
+* Date Created: 23 November 2023
+* Decription: stylesheet for login.php (login page)
+ */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+#log {
+  text-align: center;
+  font-size: 50px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fdf7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.already {
+  font-style: italic;
+  text-align: center;
+}
+
+.btnDiv {
+  margin: 0;
+  width: 25%;
+  top: 50%;
+  -ms-transform: translateY(-90%);
+  transform: translateY(-10%);
+  -ms-transform: translateX(-40%);
+  transform: translateX(140%);
+  margin-right: 50px;
+}
+
+#btnLogin {
+  background-color: #6ba5cb;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin: 15px auto;
+  font-size: 13pt;
+}
+
+#btnLogin:hover {
+  background-color: #294354;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

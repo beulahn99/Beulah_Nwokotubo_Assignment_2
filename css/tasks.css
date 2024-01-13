@@ -1,0 +1,276 @@
+/*
+* Author: Beulah Nwokotubo
+* File Name: tasks.css
+* Date Created: 23 November 2023
+* Decription: stylesheet for index.php and editTask.php
+ */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Registration Form */
+.registration-form {
+  margin-bottom: 30px;
+}
+
+.registration-form h3 {
+  color: rgb(238, 174, 202);
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+button {
+  background-color: rgb(238, 174, 202);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(249, 109, 170);
+}
+
+.logout-section {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-90%);
+  transform: translateY(-10%);
+  margin-left: 100px;
+}
+
+#btnLogout {
+  background-color: #6ba5cb;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin: 15px auto;
+  margin-left: 90%;
+  font-size: 13pt;
+}
+
+#btnLogout:hover {
+  background-color: #294354;
+}
+
+#btnSearch {
+  background-color: rgb(238, 174, 202);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin: 15px auto;
+  font-size: 13pt;
+}
+
+#btnSearch:hover {
+  background-color: rgb(249, 109, 170);
+}
+
+.label {
+  font-weight: bold;
+  color: #333;
+  font-size: 11pt;
+}
+
+.editTable {
+  width: 70%;
+}
+
+.textbox {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11pt;
+}
+
+/* Task Section */
+.task-section {
+  background-color: #fff0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.search-filter {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-filter label,
+.search-filter select,
+.search-filter input {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+#filter {
+  width: 200px;
+  height: 30px;
+  margin-left: 2px;
+  margin-top: 50px;
+}
+
+#filterLabel {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+#searchLabel {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+#btnSubmit {
+  background-color: #6ba5cb;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 12pt;
+}
+
+#btnSubmit:hover {
+  background-color: #294354;
+}
+
+#btnReset {
+  background-color: #6ba5cb;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 12pt;
+}
+
+#btnReset:hover {
+  background-color: #294354;
+}
+
+ul#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#taskList li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.add-task {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Task Table */
+.task-table {
+  overflow-x: auto;
+}
+
+.task-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.task-table th {
+  background-color: rgb(238, 174, 202);
+  color: white;
+}
+
+/*EDIT TASKS*/
+#editForm {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.priority-dropdown {
+  padding: 5px;
+  border-radius: 5px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

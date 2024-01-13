@@ -1,0 +1,168 @@
+/*
+* Author: Beulah Nwokotubo
+* File Name: register.css
+* Date Created: 23 November 2023
+* Decription: stylesheet for register.php (registration page)
+ */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 550px;
+  margin: 50px auto;
+  background-color: #fdf7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+#reg {
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Add this to your existing CSS */
+.todo-image {
+  max-width: 100%;
+  height: auto;
+  display: none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  justify-content: right;
+  height: 50px;
+  margin-top: 20px;
+  position: relative; /* Adjust as needed */
+}
+
+.already {
+  font-style: italic;
+  text-align: center;
+}
+
+.registration-form {
+  margin-bottom: 20px;
+}
+
+.registration-form h3 {
+  color: #3498db;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+}
+
+label {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+input,
+select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  color: red;
+  margin-left: 10px;
+  white-space: nowrap;
+  display: none;
+}
+
+.btnDiv {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-90%);
+  transform: translateY(-10%);
+  margin-left: 100px;
+}
+
+#btnRegister {
+  background-color: #6ba5cb;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin: 15px auto;
+  font-size: 13pt;
+}
+
+#btnRegister:hover {
+  background-color: #294354;
+}
+
+.task-section {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.search-filter,
+.add-task {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-table {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background-color: #3498db;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th:first-child,
+td:first-child {
+  border-left: 1px solid #ddd;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 1px solid #ddd;
+}
